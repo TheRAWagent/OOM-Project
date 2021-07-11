@@ -4,7 +4,6 @@
 using std::string;
     class Equalizer
     {
-        private:
         public:
             string Current;
             void Check(int);
