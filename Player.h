@@ -5,8 +5,6 @@
 using std::string;
     class Player : public Equalizer, public Sg::Song
     {
-    private:
-        /* data */
     public:
         Player(string,string);
         ~Player();
