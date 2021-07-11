@@ -5,9 +5,7 @@ namespace Sg
 {
     class Song
     {
-        private:
-            
-        public:
+         public:
             std::string Name;
     };
 }
