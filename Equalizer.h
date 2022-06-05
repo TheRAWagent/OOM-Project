@@ -4,34 +4,21 @@
 using std::string;
     class Equalizer
     {
-        public:
+        private:
             string Current;
-            void Check(int);
+        public:
+            string getMode();
+            string Mode[6]={"Normal","Jazz","Rock","Pop","Classic","Metal"};
+            Equalizer(int);
             
+            ~Equalizer();
 
     };
-    void Equalizer::Check(int n){
-        switch (n)
-        {
-        case 1:
-            Current = "Normal";
-            break;
-        case 2:
-            Current = "Jazz";
-            break;
-        case 3:
-            Current = "Rock";
-            break;
-        case 4:
-            Current = "Pop";
-            break;
-        case 5:
-            Current = "Classic";
-            break;
-        default:
-            Current = "";
-            break;
-        } 
-        }
+    Equalizer::Equalizer(int n){
+        Current=Mode[n-1];
+    }
+    string Equalizer::getMode(){
+        return Current;
+    }
         
 #endif
